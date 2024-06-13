@@ -20,6 +20,6 @@ export class LoginComponent {
   onsubmit(){
 
     console.log("submit clicked",this.user);
-    this.service.checkLogin();
+    this.service.checkLogin(this.user);
   }
 }

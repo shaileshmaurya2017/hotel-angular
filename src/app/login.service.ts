@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Login } from './login';
 
 @Injectable({
   providedIn: 'root'
@@ -8,11 +9,15 @@ export class LoginService {
 
   constructor(private http: HttpClient) { }
 
-  checkLogin(){
+  checkLogin(user:Login){
 
-this.http.get("https://jsonplaceholder.typicode.com/todos/1").subscribe(data=>{
+this.http.post("http://localhost:8080/api/login/check",user).subscribe(data=>{
   console.log(data);
 });
+
+// this.http.get("http://localhost:8080/api/room/").subscribe(data=>{
+//   console.log(data);
+// });
 
   }
 

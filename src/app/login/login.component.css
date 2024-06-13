@@ -1,10 +1,4 @@
-body
-{
-    margin: 0;
-    padding: 0;
-   
-    font-family: 'Arial';
-}
+
 .login{
         width: 382px;
         overflow: hidden;
@@ -17,13 +11,14 @@ body
 }
 
 h2{
+    margin: auto;
     margin: 20 0 0 535px;
     color: #277582;
     padding: 20px;
 }
 label{
     color: #006769;
-    font-size: 22px;
+    font-size: 26px;
 	padding: 7px;
 }
 input{
